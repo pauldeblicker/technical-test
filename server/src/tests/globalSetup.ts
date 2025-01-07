@@ -5,5 +5,6 @@ export default async function () {
 
   await app.ready();
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   (global as any).app = app;
 }
