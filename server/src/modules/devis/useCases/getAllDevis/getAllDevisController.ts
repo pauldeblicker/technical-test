@@ -1,16 +1,12 @@
 import { GetAllDevisUseCase } from './GetAllDevisUseCase';
 
 export class GetAllDevisUseCaseController {
-  private useCase: GetAllDevisUseCase;
-
-  constructor(useCase: GetAllDevisUseCase) {
-    this.useCase = useCase;
-  }
+  constructor(private useCase: GetAllDevisUseCase) {}
 
   public async execute() {
     const result = await this.useCase.execute();
 
-    if (!result) {
+    if (!result.length) {
       throw new Error('No devis found');
     }
 

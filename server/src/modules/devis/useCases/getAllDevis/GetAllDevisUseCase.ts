@@ -1,11 +1,7 @@
 import { DevisRepository } from '../../repositories/DevisRepository';
 
 export class GetAllDevisUseCase {
-  private devisRepository: DevisRepository;
-
-  constructor(devisRepository: DevisRepository) {
-    this.devisRepository = devisRepository;
-  }
+  constructor(private devisRepository: DevisRepository) {}
 
   execute() {
     return this.devisRepository.all();
