@@ -8,7 +8,7 @@ type AppProviderProps = {
 
 const queryClient = new QueryClient();
 
-export function AppProvider({ children }: AppProviderProps) {
+export function AppProvider({ children }: AppProviderProps): JSX.Element {
   return (
     <QueryClientProvider client={queryClient}>
       <Router>{children}</Router>

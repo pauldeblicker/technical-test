@@ -1,6 +1,6 @@
 import { useGetAllDevis } from '../api/getAllDevis';
 
-export function DevisList() {
+export function DevisList(): JSX.Element {
   const { data: devisList, isLoading, error } = useGetAllDevis();
 
   if (isLoading) return <div>Loading...</div>;

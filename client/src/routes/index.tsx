@@ -4,7 +4,7 @@ import { Home } from '../components/Home';
 import { Layout } from '../components/Layout';
 import { devisRoutes } from '../features/Devis';
 
-export function AppRoutes() {
+export function AppRoutes(): React.ReactElement | null {
   const commonRoutes: RouteObject[] = [{
     element: <Layout />,
     path: '/',
@@ -14,7 +14,5 @@ export function AppRoutes() {
     ],
   }];
 
-  const element = useRoutes([...commonRoutes]);
-
-  return element;
+  return useRoutes([...commonRoutes]);
 }

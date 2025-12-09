@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
-export function Layout() {
+export function Layout(): JSX.Element {
   return (
     <div>
       <nav>
