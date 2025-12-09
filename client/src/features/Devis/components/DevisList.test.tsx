@@ -1,3 +1,4 @@
+import { ReactElement } from 'react';
 import { render, screen } from '@testing-library/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { DevisList } from './DevisList';
@@ -12,7 +13,7 @@ const createTestQueryClient = () =>
     },
   });
 
-const renderWithQueryClient = (component: React.ReactElement) => {
+const renderWithQueryClient = (component: ReactElement) => {
   const queryClient = createTestQueryClient();
   return render(
     <QueryClientProvider client={queryClient}>
