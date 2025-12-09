@@ -1,6 +1,7 @@
+import { ReactElement } from 'react';
 import { useGetAllDevis } from '../api/getAllDevis';
 
-export function DevisList(): JSX.Element {
+export function DevisList(): ReactElement {
   const { data: devisList, isLoading, error } = useGetAllDevis();
 
   if (isLoading) return <div>Loading...</div>;

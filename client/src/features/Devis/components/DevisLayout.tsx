@@ -1,6 +1,7 @@
+import { ReactElement } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
-export function DevisLayout(): JSX.Element {
+export function DevisLayout(): ReactElement {
   return (
     <div>
       <nav>
