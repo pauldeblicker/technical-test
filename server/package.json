@@ -8,7 +8,8 @@
     "database:generate": "rm -f ./src/knex/database.db && touch database.db && ts-node ./database.ts",
     "start": "ts-node-dev ./src/index.ts | pino-pretty -c",
     "test": "jest --watchAll --verbose --coverage",
-    "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix"
+    "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@vscode/sqlite3": "5.0.7",
