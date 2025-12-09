@@ -15,6 +15,7 @@ export const buildFastify = (): FastifyInstance => {
   return app;
 };
 
+/* istanbul ignore next */
 export const start = async (app: FastifyInstance): Promise<void> => {
   try {
     await app.listen({ port: 3001 });
