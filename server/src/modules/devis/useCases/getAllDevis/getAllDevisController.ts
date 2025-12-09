@@ -1,7 +1,7 @@
 import { GetAllDevisUseCase } from './GetAllDevisUseCase';
 
 export class GetAllDevisUseCaseController {
-  constructor(private useCase: GetAllDevisUseCase) {}
+  constructor(private readonly useCase: GetAllDevisUseCase) {}
 
   public async execute() {
     const result = await this.useCase.execute();
