@@ -1,12 +1,17 @@
-import * as React from 'react';
+import { ReactElement, ReactNode } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 type AppProviderProps = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
-export function AppProvider({ children }: AppProviderProps) {
+const queryClient = new QueryClient();
+
+export function AppProvider({ children }: AppProviderProps): ReactElement {
   return (
-    <Router>{children}</Router>
+    <QueryClientProvider client={queryClient}>
+      <Router>{children}</Router>
+    </QueryClientProvider>
   );
 }
