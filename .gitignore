@@ -354,3 +354,7 @@ MigrationBackup/
 
 # direnv
 .direnv/
+
+# coverage
+server/coverage/
+

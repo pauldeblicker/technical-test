@@ -1,12 +1,12 @@
 # Test Technique
 
-La première étape de ce test technique est à effectuer chez toi! Dans un premier temps nous te conseillons de lire de la documentation sur l'ensemble des librairies qui sont utilisées dans ce test technique. Tu peux ensuite cloner et modifier comme il te plait ce repository en préparation de l'exercice que nous effectuerons en présentiel (ou en visio selon où tu habites). 
+La première étape de ce test technique est à effectuer chez toi! Dans un premier temps nous te conseillons de lire de la documentation sur l'ensemble des librairies qui sont utilisées dans ce test technique. Tu peux ensuite cloner et modifier comme il te plait ce repository en préparation de l'exercice que nous effectuerons en présentiel (ou en visio selon où tu habites).
 
 ## Front
 
 ### Commandes
 
-`start`: lance le serveur sur localhost:3001
+`start`: lance le client sur localhost:3000
 
 `test`: lance la suite de test
 
@@ -24,7 +24,7 @@ La première étape de ce test technique est à effectuer chez toi! Dans un prem
 
 ### Commandes
 
-`start`: lance le client sur localhost:3000
+`start`: lance le serveur sur localhost:3001
 
 `test`: lance la suite de test
 ### Tooling
@@ -42,7 +42,7 @@ La première étape de ce test technique est à effectuer chez toi! Dans un prem
 - [fastify](https://www.fastify.io/)
 
 
-## Tests 
+## Tests
 
 - [jest](https://jestjs.io/fr/)
 - [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/)

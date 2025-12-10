@@ -1,13 +1,10 @@
+import { Devis } from '../../domain/Devis';
 import { DevisRepository } from '../../repositories/DevisRepository';
 
 export class GetAllDevisUseCase {
-  private devisRepository: DevisRepository;
+  constructor(private readonly devisRepository: DevisRepository) {}
 
-  constructor(devisRepository: DevisRepository) {
-    this.devisRepository = devisRepository;
-  }
-
-  execute() {
+  execute(): Promise<Devis[]> {
     return this.devisRepository.all();
   }
 }

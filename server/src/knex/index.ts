@@ -2,10 +2,9 @@ import Knex from 'knex';
 import path from 'path';
 
 export const knex = Knex({
-  client: 'better-sqlite3', // or 'better-  '
+  client: 'better-sqlite3',
   connection: {
     filename: path.resolve(__dirname, 'database.sqlite'),
-    debug: true,
   },
   useNullAsDefault: true,
 });
